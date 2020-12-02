@@ -34,7 +34,7 @@ configure({
   files: ['test/**/*.spec.ts'],
   before: [
     startHttpServer,
-    // runMigrations,
+    runMigrations,
   ],
   // after: [rollbackMigrations],
 })

@@ -30,5 +30,6 @@ Route.group(() => {
 })
 
 Route.group(() => {
-  Route.post('/loginAdmin', 'AuthController.login')
+  Route.post('/loginAdmin', 'SessionController.loginAdmin')
+  Route.post('/forgotAdmin', 'ForgotController.forgotAdmin')
 })
