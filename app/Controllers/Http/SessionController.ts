@@ -1,5 +1,4 @@
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
-import Mail from '@ioc:Adonis/Addons/Mail'
 import * as bcrypt from 'phc-bcrypt'
 
 import Admin from 'App/Models/Admin'

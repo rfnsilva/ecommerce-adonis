@@ -4,6 +4,8 @@ import {
   column,
   beforeSave,
   BaseModel,
+  hasOne,
+  HasOne
 } from '@ioc:Adonis/Lucid/Orm'
 
 export default class Admin extends BaseModel {
@@ -27,6 +29,9 @@ export default class Admin extends BaseModel {
 
   @column()
   public rememberMeToken?: string
+
+  // @hasOne(() => Token)
+  // public token: HasOne<typeof Token>
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime

@@ -5,7 +5,7 @@
  * file.
  */
 
-import Admin from 'App/Models/Admin'
+import admin from 'App/Models/admin'
 
 declare module '@ioc:Adonis/Addons/Auth' {
   /*
@@ -34,8 +34,8 @@ declare module '@ioc:Adonis/Addons/Auth' {
     |
     */
     user: {
-      implementation: LucidProviderContract<typeof Admin>,
-      config: LucidProviderConfig<typeof Admin>,
+      implementation: LucidProviderContract<typeof admin>,
+      config: LucidProviderConfig<typeof admin>,
     },
   }
 
